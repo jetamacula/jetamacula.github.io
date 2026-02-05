@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: darkturquoise;
+}
+
+.b{
+   background-image: url("book.jpg"); 
+  height: 900px; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+      padding-left: 900px;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    background-color: lightyellow;
+    padding: 20px;
+       
+}
+ul{
+        display: flex;
+        flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+  
+}
+a{
+    text-decoration: none;
+      color: darkturquoise;
+      font-size: 50px;
+}
+a:hover{
+    color:brown ;
+}
+
+
+
+button{
+        background-color: lemonchiffon;
+            padding: 10px;
+           
+}
+
+.librat{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: 20px;
+     justify-content: center;
+}
+
+.libri{
+    border: 1px solid;
+    padding: 20px;
+    text-align: center;
+    background-color: lemonchiffon;
+}
+
+
+
+.libri:hover{
+     background-color: brown;
+  transition: background-color 0.5s;
+}
+
+
+
+.bli a{
+    font-size: 20px;
+    padding: 15px;
+}
+
+
+
+
+
+
+.b{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+
+
+
+.ajann{
+    justify-content: center;
+    display: flex;
+    width: 20%;
+}
+
+
+.shitur {
+    background-color: whitesmoke;
+}
+
+
+
+
+
+.autoret{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+
+.autor{
+        font-size: 30px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.aut{
+    text-decoration: none;
+      color: black;
+      font-size: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

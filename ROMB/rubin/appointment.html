@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>JONILAB | 🔬🧬</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script> 
+    <head>
+ <style>
+    * {
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: linear-gradient(135deg, white, rgb(43, 83, 154));
+    }
+
+    /* CENTER WRAPPER */
+    .center-wrapper {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    /* CARD */
+    .appointment-card {
+      background: whitesmoke;
+      width: 100%;
+      max-width: 420px;
+      padding: 30px;
+      border-radius: 14px;
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+    }
+
+    .appointment-card h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #333;
+    }
+
+    /* FORM */
+    .form-group {
+      margin-bottom: 16px;
+    }
+
+    label {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 6px;
+      color: #555;
+    }
+
+    input {
+      width: 100%;
+      padding: 11px 12px;
+      border-radius: 7px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+      outline: none;
+      transition: border 0.3s, box-shadow 0.3s;
+    }
+
+    input:focus {
+      border-color: white;
+      box-shadow: 0 0 0 2px rgba(37, 117, 252, 0.2);
+    }
+
+    button {
+      width: 100%;
+      padding: 13px;
+      margin-top: 10px;
+      background: darkblue;
+      border:none;
+      border-radius: 8px;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    button:hover {
+      background: lightgreen;
+      transform: translateY(-1px);
+    }
+
+    .note {
+      text-align: center;
+      font-size: 12px;
+      color: #888;
+      margin-top: 12px;
+    }
+    .para{
+   background-image: url("dora.jfif"); 
+  height: 500px; /* You must set a specified height */
+  width: 1300px;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 290px;
+  
+  
+}
+
+  </style>
+</head>
+<body>
+<nav>
+    <img src="logo.png">
+<ul>
+    
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="analise.html">PROCESI I ANALIZAVE TONA</a></li>
+    <li><a href="appointment.html">REZERVO NJË TAKIM</a></li>
+  
+</ul>
+</nav>
+<body>
+
+  <div class="center-wrapper">
+    <div class="appointment-card">
+
+      <!-- FORM -->
+      <div id="formContainer">
+        <h2>REZERVO NJË TAKIM</h2>
+
+        <form id="appointmentForm">
+          <div class="form-group">
+            <label>Emri yt</label>
+            <input type="text" required="">
+          </div>
+
+          <div class="form-group">
+            <label>Email Addressa</label>
+            <input type="email" required="">
+          </div>
+
+          <div class="form-group">
+            <label>Numri i Telefonit</label>
+            <input type="tel" required="">
+          </div>
+
+          <button type="submit">Send</button>
+        </form>
+      </div>
+
+      <!-- THANK YOU (NOT THERE UNTIL CLICK) -->
+      <div id="thankYou" class="thank-you">
+        ✅ Faleminderit!
+        <p>Takimi juaj vjen tek ne së shpejti.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById("appointmentForm");
+    const formContainer = document.getElementById("formContainer");
+    const thankYou = document.getElementById("thankYou");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      form.reset();
+      formContainer.style.display = "none";
+      thankYou.style.display = "block";
+    });
+  </script>
+
+</body>
+</html>
+</body>
+</html>

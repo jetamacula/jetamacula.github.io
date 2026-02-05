@@ -1,0 +1,182 @@
+<!DOCTYPE html> 
+<head>
+<html lang="en">
+    <title>JONILAB | 🔬🧬</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* STILI BAZË */
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: whitesmoke;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* SEKSIONI I PROCESIT */
+#procesi {
+    padding: 80px 20px;
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+#procesi h2 {
+    font-size: 2.5rem;
+    color: rgb(43, 83, 154);
+    margin-bottom: 15px;
+}
+
+#procesi p {
+    max-width: 700px;
+    margin: 0 auto 50px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* KARTAT */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: white;
+    padding: 35px 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* EFEKT DEKORATIV */
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(90deg, darkblue, blue);
+}
+
+/* HOVER */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* TITUJ & TEKST */
+.card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: rgb(43, 83, 154);
+}
+
+.card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    #procesi h2 {
+        font-size: 2rem;
+    }
+
+    .card {
+        padding: 2px 20px;
+    }
+}
+.para{
+   background-image: url("dora.jfif"); 
+  height: 500px; /* You must set a specified height */
+  width: 1300px;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 290px;
+  
+  
+}
+
+</style>
+</head>
+<body>
+<nav>
+     <img src="logo.png">
+<ul>
+    
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="analise.html">PROCESI I ANALIZAVE TONA</a></li>
+    <li><a href="appointment.html">REZERVO NJË TAKIM</a></li>
+   
+</ul>
+</nav>
+<section id="procesi">
+    <h2>Si Punojmë në JoniLab</h2>
+    <p>
+        Çdo analizë është një histori. Ne nuk shohim vetëm numra —
+        zbulojmë kuptimin pas tyre dhe i kthejmë në njohuri reale.
+    </p>
+
+    <div class="cards">
+        <div class="card">
+            <h3> Fillojmë me Pyetjen e Duhur</h3>
+            <p>
+                Para çdo analize, kuptojmë qëllimin. Çfarë doni të dini?
+                Çfarë problemi po përpiqemi të zgjidhim?
+            </p>
+        </div>
+
+        <div class="card">
+            <h3> Mbledhim & Rregullojmë Të Dhënat</h3>
+            <p>
+                Të dhënat vijnë nga burime të ndryshme. Ne i pastrojmë,
+                i organizojmë dhe i përgatisim për analizë të saktë.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3> Zbulojmë Modelet e Fshehura</h3>
+            <p>
+                Përmes analizës statistikore dhe mjeteve moderne,
+                zbulojmë trende dhe lidhje që nuk duken në shikim të parë.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3> I Kthejmë Numrat në Kuptim</h3>
+            <p>
+                Rezultatet interpretohen nga ekspertë,
+                duke i lidhur drejtpërdrejt me vendime reale.
+            </p>
+        </div>
+
+                <div class="card">
+            <h3> Verifikojmë Rezultatin para dorëzimit te saj </h3>
+            <p>
+                Verifikojmë se rezultatet janë të sakta me 
+                problemin që ka pacienti.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3> Dorëzojmë Zgjidhje, jo Vetëm Raporte</h3>
+            <p>
+                Ju merrni rekomandime të qarta, vizuale dhe të gatshme
+                për veprim — jo thjesht tabela me numra.
+            </p>
+        </div>
+    </div>
+</section>
+</body>
+</html>

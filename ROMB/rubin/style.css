@@ -1,0 +1,110 @@
+*{margin: 0;}
+
+nav{
+  height: 100px; /* adjust if needed */
+  background: linear-gradient(
+    to right,
+    #ffffff 0%,     /* pure white */
+    #dae0fc 60%,    /* very light cyan transition */
+    #2B539A 100%    /* nice light cyan on the right */
+  );
+display: flex;
+    flex-direction: row;
+    gap: 800px;
+} 
+.doraa{
+    height: 100px; /* adjust if needed */
+  background: linear-gradient(
+    to right,
+    #ffffff 0%,     /* pure white */
+    #dae0fc 60%,    /* very light cyan transition */
+    #2B539A 100%    /* nice light cyan on the right */
+  );
+display: flex;
+    flex-direction: row;
+    gap: 200px;
+
+}
+img{
+    width: 100px;
+    height: auto;
+    
+}
+
+ul{
+display: flex;
+    flex-direction: row;
+  justify-content: space-between;
+    list-style: none;
+    gap: 100px;
+        padding-top: 35px;
+
+}
+a{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    color:rgb(43, 83, 154);
+}
+a:hover{
+    color: rgb(100, 137, 206);
+}
+
+
+
+.para{
+   background-image: url("o.jpg"); 
+  height: 500px; /* You must set a specified height */
+  width: 1300px;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 290px;
+  border-radius: 20px;
+  margin-top: 40px;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Slight zoom on hover */
+.hero-image:hover {
+  background-size: 110%;
+}
+
+/* The big white bordered box */
+.inner-box {
+    
+    width: 98%;
+    height: 80%;
+    background-color: white;
+    border: 2px solid lightcyan;
+    border-radius: 18px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    justify-content: center;
+    padding: 40px;
+    box-sizing: border-box;
+
+}
+
+/* Optional text styling */
+.inner-box h2 {
+  margin-bottom: 15px;
+}
+
+.inner-box p {
+  max-width: 600px;
+  text-align: center;
+}

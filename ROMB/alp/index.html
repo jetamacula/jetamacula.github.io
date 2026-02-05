@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Hotel</title>
+    <style>
+        /* Stili i përgjithshëm */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+
+        /* Menuja e navigimit */
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Seksioni kryesor */
+        header {
+            background-image: url('https://images.unsplash.com/photo-1501117716987-c8e7a1239d36?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: black;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        header h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        header p {
+            font-size: 20px;
+        }
+
+        /* Seksionet e tjera */
+        section {
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        section h3 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* Kartat e dhomave */
+        .rooms {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .room-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            width: 300px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .room-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .room-card h4 {
+            margin: 15px 0 10px 0;
+        }
+
+        .room-card p {
+            padding: 0 10px 15px 10px;
+            color: #555;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Menuja -->
+    <nav>
+        <h1>Home Hotel</h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#rooms">Dhomat</a></li>
+            <li><a href="#about">Rreth Nesh</a></li>
+            <li><a href="#contact">Kontakti</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header id="home">
+        <h2>Miresevini ne Home Hotel</h2>
+        <p>Komoditet dhe relaksim në një vend të vetëm</p>
+    </header>
+
+    <!-- Seksioni i dhomave -->
+    <section id="rooms">
+        <h3>Dhomat tona</h3>
+        <div class="rooms">
+            <div class="room-card">
+                <img src="rrom1.jpg" alt="Dhoma Standarde">
+                <h4>Dhoma Standarde</h4>
+                <p>Komoditet i thjeshtë me pamje të mrekullueshme.</p>
+            </div>
+            <div class="room-card">
+                <img src="rrom2.jpg" alt="Dhoma Deluxe">
+                <h4>Dhoma Deluxe</h4>
+                <p>Luks dhe rehati maksimale për qëndrimin tuaj.</p>
+            </div>
+            <div class="room-card">
+                <img src="rrom3.jpg" alt="Suitë">
+                <h4>Suitë</h4>
+                <p>Përvojë premium me hapësira të mëdha dhe luks.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rreth Nesh -->
+    <section id="about">
+        <h3>Rreth Nesh</h3>
+        <p>Home Hotel është vendi ideal për pushime të qeta dhe komode. Ne ofrojmë shërbim të shkëlqyer dhe ambient të rehatshëm për çdo mysafir.</p>
+    </section>
+
+    <!-- Kontakti -->
+    <section id="contact">
+        <h3>Kontakti</h3>
+        <p>Email: info@homehotel.com</p>
+        <p>Telefoni: +355 123 456 789</p>
+        <p>Adresa: Rruga e Qytetit Vehap Shita, Gjakova, Kosova</p>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <meta charset="UTF-8">
+    <title>Hotel Relax</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .rooms {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .room {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .room img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .room-content {
+            padding: 15px;
+        }
+
+        .room-content h3 {
+            margin: 0 0 10px;
+        }
+
+        .price {
+            color: #27ae60;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Hotel Relax</h1>
+    <p>Mirësevini në hotelin tonë</p>
+</header>
+
+<div class="container">
+    <h2>Dhomat & Çmimet</h2>
+
+    <div class="rooms">
+        <div class="room">
+            <img src="rrom4.jpg" alt="Dhoma Standarde">
+            <div class="room-content">
+                <h3>Dhoma Standarde</h3>
+                <p>1 krevat, WiFi falas, TV</p>
+                <p class="price">50€ / natë</p>
+            </div>
+        </div>
+
+        <div class="room">
+            <img src="rrom5.webp" alt="Dhoma Dyshe">
+            <div class="room-content">
+                <h3>Dhoma Dyshe</h3>
+                <p>2 krevate, ballkon, ajër i kondicionuar</p>
+                <p class="price">80€ / natë</p>
+            </div>
+        </div>
+
+        <div class="room">
+            <img src="rrom5.jpg" alt="Suitë Luksoze">
+            <div class="room-content">
+                <h3>Suitë Luksoze</h3>
+                <p>Dhoma e madhe, minibar, pamje deti</p>
+                <p class="price">120€ / natë</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 Hotel Relax | Tel: +355 123 456 789</p>
+</footer>
+
+<meta charset="UTF-8">
+    <title>Hotel Alp</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #34495e;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+            background-color: white;
+            margin: 20px;
+            border-radius: 8px;
+        }
+        h2 {
+            color: #2c3e50;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Hotel Alp</h1>
+    <p>Mirë se vini në hotelin tonë luksoz</p>
+</header>
+
+<nav>
+    <a href="#hotel">Hoteli</a>
+    <a href="#dhoma">Dhomat</a>
+    <a href="#restoranti">Restoranti</a>
+    <a href="#kontakt">Kontakt</a>
+</nav>
+
+<section id="hotel">
+    <h2>Rreth Hotelit</h2>
+    <p>Hotel Alp ka 4 kate dhe ofron rehati maksimale për mysafirët tanë.</p>
+</section>
+
+<section id="dhoma">
+    <h2>Dhomat sipas Kateve</h2>
+    <ul>
+        <li><strong>Kati 1:</strong> 5 dhoma standarde</li>
+        <li><strong>Kati 2:</strong> 6 dhoma deluxe</li>
+        <li><strong>Kati 3:</strong> 4 dhoma familjare</li>
+        <li><strong>Kati 4:</strong> 2 suita luksoze</li>
+    </ul>
+</section>
+
+
+
+
+
+ <meta charset="UTF-8">
+    <title>Alp Hotel - Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .menu {
+            max-width: 800px;
+            margin: 30px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .menu h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .price {
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #2c3e50;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Alp Hotel</h1>
+    <p>Mirë se vini në restorantin tonë</p>
+</header>
+
+<body>
+
+    <h1>Peshk nga Basenet</h1>
+
+    <img src="fish.jpg"
+         alt="Peshk ne basen">
+
+    <p>Kjo është një foto ilustrative e një peshku në basen.</p>
+
+
+
+
+
+
+
+
+
+
+
+     <title>Alp Kafe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f5f2ee;
+            color: #333;
+        }
+        header {
+            background-color: #4b2e1e;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        section {
+            padding: 40px;
+            max-width: 900px;
+            margin: auto;
+        }
+        h2 {
+            color: #4b2e1e;
+        }
+        .kafe {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        footer {
+            background-color: #4b2e1e;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Alp Kafe</h1>
+    <p>Kafe të shkëlqyera • Ambient i ngrohtë • Cilësi alpine</p>
+</header>
+
+<section>
+    <h2>Mirë se vini në Alp Kafe</h2>
+    <p>
+        Alp Kafe është vendi ideal për dashamirët e kafesë. 
+        Ne ofrojmë kafe premium të përzgjedhura me kujdes, 
+        të përgatitura nga barista profesionistë.
+    </p>
+</section>
+
+<section>
+    <h2>Kafetë tona më të mira</h2>
+
+    <div class="kafe">
+        <h3>Espresso Alp</h3>
+        <p>Espresso i fortë dhe aromatik, perfekt për një fillim energjik të ditës.</p>
+    </div>
+
+    <div class="kafe">
+        <h3>Cappuccino Klasik</h3>
+        <p>Kombinim perfekt mes kafesë dhe qumështit të shkumëzuar.</p>
+    </div>
+
+    <div class="kafe">
+        <h3>Latte Vanilje</h3>
+        <p>Shije e butë dhe e ëmbël, ideale për momente relaksi.</p>
+    </div>
+</section>
+
+<section id="restoranti">
+    <h2>Alp Restaurant</h2>
+    <p>Alp Restaurant ofron ushqime tradicionale dhe ndërkombëtare, me shërbim cilësor dhe ambient elegant.</p>
+</section>
+
+<section id="kontakt">
+    <h2>Kontakt</h2>
+    <p> Adresa:  Rruga e Qytetit Vehap Shita, Gjakova, Kosova </p>
+    <p> Telefoni: +355 123 456 789</p>
+    <p> Email: info@hotelalp.com</p>
+    
+<footer>
+    <p>© 2026 Alp Hotel | Të gjitha të drejtat e rezervuara</p>
+</footer>
+</section>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0b0f1a;
+    color: white;
+}
+
+.navbar {
+    background-color: #003087;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.navbar a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background: linear-gradient(135deg, #003087, #001f54);
+    padding: 60px;
+    text-align: center;
+}
+
+.hero button {
+    background-color: #0070d1;
+    border: none;
+    padding: 12px 25px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button a{
+    background-color: #0070d1;
+    border: none;
+    padding: 12px 25px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.games {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+}
+
+.game-card {
+    background-color: #111827;
+    padding: 15px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.game-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.game-card span {
+    color: #00aaff;
+    font-weight: bold;
+}
+
+.produktet{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: 20px;
+    justify-content: center;
+
+}
+.produkt{
+    border: 1px solid;
+    padding: 20px;
+    text-align: center;
+}
+
+.produkt:hover{
+    background-color: #003087;
+}
+
+.intro{
+    text-align: center;
+}
+.benefits{
+    text-align: center;
+    list-style: none;
+}
